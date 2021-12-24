@@ -1,0 +1,60 @@
+.navigation-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    z-index: 1;
+
+    .logo-container {
+        .logo {
+            font-family: 'Abril Fatface', cursive;
+            font-size: 2rem;
+            margin: 0;
+        }
+    }
+
+    .image-container {
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        right: 40%;
+        top: -80px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .nav-right {
+        display: flex;
+        width: 20%;
+        justify-content: space-around;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 550;
+        font-size: .9rem;
+
+        .cart {
+            display: flex;
+            align-items: center;
+
+            .cart-text {
+                margin: 0 0 0 .5rem;
+            }
+
+            .nav-icon {
+                font-size: 1rem;
+            }
+        }
+
+        .translate {
+            .language {
+                margin: 0;
+            }
+        }
+    }
+}

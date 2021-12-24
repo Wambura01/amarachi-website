@@ -1,0 +1,23 @@
+.right-nav {
+    width: 10%;
+    position: fixed;
+    left: 0;
+    top: 250px;
+    z-index: 1;
+    color: white;
+
+    .links-container {
+        .link {
+            list-style-type: none;
+            margin-bottom: 1rem;
+            font-family: 'Dosis', sans-serif;
+            cursor: pointer;
+        }
+
+        .link:hover {
+            color: #528c3d;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+}
