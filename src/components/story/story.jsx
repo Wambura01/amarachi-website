@@ -23,12 +23,12 @@ const Story = () => {
       {
         y: -350,
         scrollTrigger: {
-          trigger: ".story-left_image",
+          trigger: ".story-left__image",
           scrub: true,
-          start: "top top",
+          start: "top +=600",
           end: "bottom top",
+          duration: 1,
         },
-        duration: 1,
       }
     );
   }, []);
@@ -43,12 +43,12 @@ const Story = () => {
       {
         y: -250,
         scrollTrigger: {
-          trigger: ".story-right_image",
-          scrub: true,
-          start: "top top",
+          trigger: ".story-right__image",
+          start: "top +=600",
           end: "bottom top",
+          duration: 1,
+          scrub: true,
         },
-        duration: 3,
       }
     );
   }, []);

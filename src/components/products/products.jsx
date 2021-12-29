@@ -23,11 +23,11 @@ function Products() {
 
   useEffect(() => {
     // getting each div into an array, looping through it and pinning it
-    gsap.utils.toArray(".herbs").forEach((herb, i) => {
+    gsap.utils.toArray(".product").forEach((product, i) => {
       ScrollTrigger.create({
-        trigger: herb,
+        trigger: product,
         start: "top top",
-        end: "bottom 20px",
+        end: "bottom top",
         pin: true,
         pinSpacing: false,
       });
@@ -67,7 +67,7 @@ function Products() {
           trigger: ".products-right__image",
           scrub: true,
           start: "top bottom",
-          end: "bottom 20px",
+          end: "bottom top",
         },
         duration: 5,
       }
@@ -134,12 +134,6 @@ function Products() {
         </div>
       </div>
       <div className="herbs tarragon">
-        <div className="products-left__image">
-          <img src={ProductsLeft} alt="background" />
-        </div>
-        <div className="products-right__image">
-          <img src={ProductsRight} alt="background" />
-        </div>
         <div className="background-1">
           <img src={bg1} alt="background" />
         </div>
@@ -198,12 +192,6 @@ function Products() {
         </div>
       </div>
       <div className="herbs oregamo">
-        <div className="products-left__image">
-          <img src={ProductsLeft} alt="background" />
-        </div>
-        <div className="products-right__image">
-          <img src={ProductsRight} alt="background" />
-        </div>
         <div className="background-1">
           <img src={bg1} alt="background" />
         </div>
@@ -256,12 +244,6 @@ function Products() {
         </div>
       </div>
       <div className="herbs rosemary">
-        <div className="products-left__image">
-          <img src={ProductsLeft} alt="background" />
-        </div>
-        <div className="products-right__image">
-          <img src={ProductsRight} alt="background" />
-        </div>
         <div className="background-1">
           <img src={bg1} alt="background" />
         </div>

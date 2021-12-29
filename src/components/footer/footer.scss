@@ -1,0 +1,125 @@
+.footer-container {
+    width: 100%;
+    background-color: #1e2622;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .footer-content {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 11rem 0 13rem 0;
+
+        .stocklist-container {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+
+            .stocklist-title {
+                color: white;
+                margin: 0 0 2rem 0;
+                font-size: 3.5rem;
+            }
+
+            .stock-container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 3rem;
+                
+                .stock {
+                    width: 30%;
+                    border-left: 2px solid white;
+                    padding-left: 1rem;
+
+                    .title {
+                        color: white;
+                        margin-top: 0;
+                        font-family: 'Dosis', sans-serif;
+                        font-size: 1.1rem;
+                    }
+
+                    .buy-btn {
+                        background-color: #5e9f46;
+                        padding: .8rem 1.3rem;
+                        color: white;
+                        border: 0;
+                        border-radius: 7px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        transition: background-color 5ms linear;
+                    }
+
+                    .buy-btn:hover {
+                        background-color: #0f0f0f;
+                        text-decoration: underline;
+                    }
+                }
+
+                .stock:nth-child(4){
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        .footer-links__container {
+            width: 60%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 3.5rem;
+
+            .footer-links {
+                color: #888787;
+
+                .link {
+                    cursor: pointer;
+                    margin: 0;
+                    transition: all .5ms linear;
+
+                    span {
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+
+                .link:nth-child(1):hover {
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+
+                .link:nth-child(2):hover {
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .footer-bg__left {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .footer-bg__right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 15%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
